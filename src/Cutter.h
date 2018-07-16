@@ -426,6 +426,7 @@ public:
     void seek(ut64 offset);
     void seekPrev();
     void seekNext();
+    void updateSeek();
     RVA getOffset();
     RVA prevOpAddr(RVA startAddr, int count);
     RVA nextOpAddr(RVA startAddr, int count);

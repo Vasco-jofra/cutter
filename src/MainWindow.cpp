@@ -378,6 +378,7 @@ void MainWindow::finalizeOpen()
     // FIXME: initialization order frakup. the next line is needed so that the
     // comments widget displays the function names.
     core->cmd("fs sections");
+    core->updateSeek();
     refreshAll();
 
     addOutput(tr(" > Finished, happy reversing :)"));
